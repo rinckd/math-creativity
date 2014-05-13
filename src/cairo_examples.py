@@ -14,7 +14,8 @@ context.set_source_rgb(0.7, 0.2, 0.0)
 context.translate(width / 2, height / 2)
 context.arc(0, 0, 50, 0, 2*math.pi)
 context.stroke_preserve()
-
+context.set_source_rgb(0.3, 0.4, 0.6)
+context.fill()
 # Restore the default source which is black.
 linear = cairocffi.LinearGradient(0, 0, 1, 1)
 linear.add_color_stop_rgb(0, 0, 0.3, 0.8)
@@ -25,6 +26,7 @@ radial.add_color_stop_rgba(0, 0, 0, 0, 1)
 radial.add_color_stop_rgba(0.5, 0, 0, 0, 0)
 
 context.set_line_width(10)
+context.move_to(0, 0)
 context.set_source_rgb(0, 0, 0)
 context.rectangle(0, 0, 10, 20)
 context.stroke()
