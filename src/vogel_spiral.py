@@ -30,36 +30,34 @@ for j in range(n):
 
         if n_fac > 1:
             print n_fac
-            radius = 0.05 * pow(2, (n_fac + 3)/2.5)
-            p = path.line(x, y, x, y-1) << path.line(x, y-1, x+1, y-1) << path.line(x+1, y-1, x+2, y) << path.line(x+2, y, x+2, y+1) << path.line(x+2, y+1, x+1, y+1) << path.line(x+1, y+1, x, y)
-            p.append(path.closepath())
+            radius = 0.1 * pow(2, (n_fac)/2.5)
+            ca.stroke(path.circle(x, y, radius), [style.linewidth.Thick, color.rgb.black])
 
-            ca.stroke(p.path(), [style.linewidth.Thick, color.rgb.black])
             #ca.fill(p, [color.lineargradient(color.gradient.rgb(0, 0, 0), color.gradient.rgb(1, 1, 1))])
             if n_fac == 1:
-                ca.fill(p,  [color.cmyk(25.0/100.0, 0.0/100.0, 0.0/100.0, 0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(255.0/255.0, 247.0/255.0, 251.0/255.0)])
             elif n_fac == 2:
-                ca.fill(p,  [color.cmyk(57.0/100.0, 17.0/100.0, 14.0/100.0, 0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(236.0/255.0, 231.0/255.0, 242.0/255.0)])
             elif n_fac == 3:
-                ca.fill(p,  [color.cmyk(66.0/100.0, 22.0/100.0, 14.0/100.0, 0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(208.0/255.0, 209.0/255.0, 230.0/255.0)])
             elif n_fac == 4:
-                ca.fill(p,  [color.cmyk(78.0/100.0, 30.0/100.0, 14.0/100.0, 0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(166.0/255.0, 189.0/255.0, 219.0/255.0)])
             elif n_fac == 5:
-                ca.fill(p,  [color.cmyk(83.0/100.0, 41.0/100.0, 14.0/100.0, 0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(116.0/255.0, 169.0/255.0, 207.0/255.0)])
             elif n_fac == 6:
-                ca.fill(p,  [color.cmyk(84.0/100.0, 41.0/100.0, 15.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(54.0/255.0, 144.0/255.0, 192.0/255.0)])
             elif n_fac == 7:
-                ca.fill(p,  [color.cmyk(89.0/100.0, 54.0/100.0, 6.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(5.0/255.0, 112.0/255.0, 176.0/255.0)])
             elif n_fac == 8:
-                ca.fill(p,  [color.cmyk(97.0/100.0, 82.0/100.0, 1.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(4.0/255.0, 90.0/255.0, 141.0/255.0)])
             elif n_fac == 9:
-                ca.fill(p,  [color.cmyk(100.0/100.0, 88.0/100.0, 0.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(2.0/255.0, 56.0/255.0, 88.0/255.0)])
             elif n_fac == 10:
-                ca.fill(p,  [color.cmyk(100.0/100.0, 90.0/100.0, 0.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(2.0/255.0, 56.0/255.0, 88.0/255.0)])
             elif n_fac == 11:
-                ca.fill(p,  [color.cmyk(100.0/100.0, 92.0/100.0, 0.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(2.0/255.0, 56.0/255.0, 88.0/255.0)])
             elif n_fac == 12:
-                ca.fill(p,  [color.cmyk(100.0/100.0, 100.0/100.0, 0.0/100.0, 0.0/100.0)])
+                ca.fill(path.circle(x, y, radius),  [color.rgb(2.0/255.0, 56.0/255.0, 88.0/255.0)])
 
             #ca.fill(p, [color.gray(0.8)])
             #ca.fill(path.circle(x, y, radius))
