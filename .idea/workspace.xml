@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/Intro to Pandas.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="8" />
+              <selected id="10" />
             </state>
           </provider>
         </entry>
@@ -102,6 +102,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/vogel_spiral.py" />
+        <option value="$PROJECT_DIR$/src/Intro to Pandas.ipynb" />
       </list>
     </option>
   </component>
@@ -644,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fibonacci_sums.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cairo_examples.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -698,10 +691,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fibonacci_sums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Intro to Pandas.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="0" />
+          <selected id="9" />
         </state>
       </provider>
     </entry>

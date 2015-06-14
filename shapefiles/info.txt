@@ -1,0 +1,6 @@
+Kansas City Metro
+
+http://www.marc.org/Data-Economy/Maps-and-GIS/GIS-Data/GIS-Datasets
+
+Community Analysis Area
+CAAs, created for the 8-county region (excluding Miami County), are contiguous areas with approximately the same age of housing and development potential. CAAs are used in long-range forecasts.
