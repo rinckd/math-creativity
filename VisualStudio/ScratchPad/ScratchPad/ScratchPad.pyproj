@@ -22,6 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Cake01_Stock_Prices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Coursera_01_Split_Inversions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Merge_Sort.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ScratchPad.py" />
   </ItemGroup>
   <PropertyGroup>
