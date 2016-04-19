@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<homerml version="3.2.06">
+    <simulation_results>
+        <optimization_variables>
+            <pv number="1" units="kW">10</pv>
+            <wind_turbine number="1">1</wind_turbine>
+            <wind_turbine number="2">3</wind_turbine>
+            <hydro units="kW">79.461</hydro>
+            <generator number="1" units="kW">30</generator>
+            <generator number="2" units="kW">10</generator>
+            <generator number="3" units="kW">10</generator>
+            <generator number="4" units="kW">10</generator>
+            <generator number="5" units="kW">20</generator>
+            <grid units="kW">1,000</grid>
+            <battery number="1" units="strings">100</battery>
+            <converter units="kW">1,000</converter>
+            <flywheel units="quantity">2</flywheel>
+            <dispatch_strategy>Load Following</dispatch_strategy>
+            <selected_efficiency_case>0</selected_efficiency_case>
+        </optimization_variables>
+        <cost_summary>
+            <total_net_present_cost units="$">-9009895</total_net_present_cost>
+            <levelized_coe units="$/kWh">-0.12026</levelized_coe>
+        </cost_summary>
+        <component_costs>
+            <component>
+                <description>PV</description>
+                <net_present_capital_cost units="$">10000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">3083.2</net_present_replacement_cost>
+                <net_present_operating_cost units="$">207.2</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-855.99</net_present_salvage_cost>
+                <net_present_total_cost units="$">12434</net_present_total_cost>
+                <annualized_capital_cost units="$">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$">148.8</annualized_replacement_cost>
+                <annualized_operating_cost units="$">10</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-41.312</annualized_salvage_cost>
+                <annualized_total_cost units="$">600.11</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generic 10kW</description>
+                <net_present_capital_cost units="$">25000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">21590</net_present_replacement_cost>
+                <net_present_operating_cost units="$">20720</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">67310</net_present_total_cost>
+                <annualized_capital_cost units="$">1206.6</annualized_capital_cost>
+                <annualized_replacement_cost units="$">1042</annualized_replacement_cost>
+                <annualized_operating_cost units="$">1000</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">3248.5</annualized_total_cost>
+            </component>
+            <component>
+                <description>Vestas V82</description>
+                <net_present_capital_cost units="$">90000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">328886</net_present_replacement_cost>
+                <net_present_operating_cost units="$">62160</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">481046</net_present_total_cost>
+                <annualized_capital_cost units="$">4343.6</annualized_capital_cost>
+                <annualized_replacement_cost units="$">15873</annualized_replacement_cost>
+                <annualized_operating_cost units="$">3000</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">23216</annualized_total_cost>
+            </component>
+            <component>
+                <description>Flywheel</description>
+                <net_present_capital_cost units="$">40000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">34543</net_present_replacement_cost>
+                <net_present_operating_cost units="$">4144</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">78687</net_present_total_cost>
+                <annualized_capital_cost units="$">1930.5</annualized_capital_cost>
+                <annualized_replacement_cost units="$">1667.1</annualized_replacement_cost>
+                <annualized_operating_cost units="$">200</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">3797.6</annualized_total_cost>
+            </component>
+            <component>
+                <description>Hydro</description>
+                <net_present_capital_cost units="$">10000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">13188</net_present_replacement_cost>
+                <net_present_operating_cost units="$">2072</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-684.79</net_present_salvage_cost>
+                <net_present_total_cost units="$">24576</net_present_total_cost>
+                <annualized_capital_cost units="$">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$">636.51</annualized_replacement_cost>
+                <annualized_operating_cost units="$">100</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-33.05</annualized_salvage_cost>
+                <annualized_total_cost units="$">1186.1</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generator 1</description>
+                <net_present_capital_cost units="$">15000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">53761</net_present_replacement_cost>
+                <net_present_operating_cost units="$">120901</net_present_operating_cost>
+                <net_present_fuel_cost units="$">155327</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-635.57</net_present_salvage_cost>
+                <net_present_total_cost units="$">344355</net_present_total_cost>
+                <annualized_capital_cost units="$">723.94</annualized_capital_cost>
+                <annualized_replacement_cost units="$">2594.6</annualized_replacement_cost>
+                <annualized_operating_cost units="$">5835</annualized_operating_cost>
+                <annualized_fuel_cost units="$">7496.5</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-30.674</annualized_salvage_cost>
+                <annualized_total_cost units="$">16619</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generator 2</description>
+                <net_present_capital_cost units="$">5000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">0</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-817.47</net_present_salvage_cost>
+                <net_present_total_cost units="$">4182.5</net_present_total_cost>
+                <annualized_capital_cost units="$">241.31</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">0</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-39.453</annualized_salvage_cost>
+                <annualized_total_cost units="$">201.86</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generator 3</description>
+                <net_present_capital_cost units="$">500</net_present_capital_cost>
+                <net_present_replacement_cost units="$">1114</net_present_replacement_cost>
+                <net_present_operating_cost units="$">5443.2</net_present_operating_cost>
+                <net_present_fuel_cost units="$">23033</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-7.6397</net_present_salvage_cost>
+                <net_present_total_cost units="$">30083</net_present_total_cost>
+                <annualized_capital_cost units="$">24.131</annualized_capital_cost>
+                <annualized_replacement_cost units="$">53.767</annualized_replacement_cost>
+                <annualized_operating_cost units="$">262.7</annualized_operating_cost>
+                <annualized_fuel_cost units="$">1111.6</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-0.36871</annualized_salvage_cost>
+                <annualized_total_cost units="$">1451.9</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generator 4</description>
+                <net_present_capital_cost units="$">5000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">1367.5</net_present_operating_cost>
+                <net_present_fuel_cost units="$">1805.1</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-771.25</net_present_salvage_cost>
+                <net_present_total_cost units="$">7401.4</net_present_total_cost>
+                <annualized_capital_cost units="$">241.31</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">66</annualized_operating_cost>
+                <annualized_fuel_cost units="$">87.12</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-37.222</annualized_salvage_cost>
+                <annualized_total_cost units="$">357.21</annualized_total_cost>
+            </component>
+            <component>
+                <description>Generator 5</description>
+                <net_present_capital_cost units="$">6000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">0</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-980.97</net_present_salvage_cost>
+                <net_present_total_cost units="$">5019</net_present_total_cost>
+                <annualized_capital_cost units="$">289.57</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">0</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-47.344</annualized_salvage_cost>
+                <annualized_total_cost units="$">242.23</annualized_total_cost>
+            </component>
+            <component>
+                <description>Grid</description>
+                <net_present_capital_cost units="$">0</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">-12598588</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">-12598588</net_present_total_cost>
+                <annualized_capital_cost units="$">0</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">-608039</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">-608039</annualized_total_cost>
+            </component>
+            <component>
+                <description>Boiler</description>
+                <net_present_capital_cost units="$">0</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">0</net_present_operating_cost>
+                <net_present_fuel_cost units="$">1809505</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">1809505</net_present_total_cost>
+                <annualized_capital_cost units="$">0</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">0</annualized_operating_cost>
+                <annualized_fuel_cost units="$">87331</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">87331</annualized_total_cost>
+            </component>
+            <component>
+                <description>Cellcube FB 200-1600</description>
+                <net_present_capital_cost units="$">390000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">259224</net_present_replacement_cost>
+                <net_present_operating_cost units="$">93240</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-50076</net_present_salvage_cost>
+                <net_present_total_cost units="$">692389</net_present_total_cost>
+                <annualized_capital_cost units="$">18822</annualized_capital_cost>
+                <annualized_replacement_cost units="$">12511</annualized_replacement_cost>
+                <annualized_operating_cost units="$">4500</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-2416.8</annualized_salvage_cost>
+                <annualized_total_cost units="$">33416</annualized_total_cost>
+            </component>
+            <component>
+                <description>Converter</description>
+                <net_present_capital_cost units="$">10000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">2774.9</net_present_replacement_cost>
+                <net_present_operating_cost units="$">20720</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-770.39</net_present_salvage_cost>
+                <net_present_total_cost units="$">32725</net_present_total_cost>
+                <annualized_capital_cost units="$">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$">133.92</annualized_replacement_cost>
+                <annualized_operating_cost units="$">1000</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-37.181</annualized_salvage_cost>
+                <annualized_total_cost units="$">1579.4</annualized_total_cost>
+            </component>
+            <component>
+                <description>Other</description>
+                <net_present_capital_cost units="$">11000</net_present_capital_cost>
+                <net_present_replacement_cost units="$">0</net_present_replacement_cost>
+                <net_present_operating_cost units="$">-12024</net_present_operating_cost>
+                <net_present_fuel_cost units="$">0</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">0</net_present_salvage_cost>
+                <net_present_total_cost units="$">-1024.3</net_present_total_cost>
+                <annualized_capital_cost units="$">530.89</annualized_capital_cost>
+                <annualized_replacement_cost units="$">0</annualized_replacement_cost>
+                <annualized_operating_cost units="$">-580.32</annualized_operating_cost>
+                <annualized_fuel_cost units="$">0</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">0</annualized_salvage_cost>
+                <annualized_total_cost units="$">-49.434</annualized_total_cost>
+            </component>
+            <component>
+                <description>System</description>
+                <net_present_capital_cost units="$">617500</net_present_capital_cost>
+                <net_present_replacement_cost units="$">718164</net_present_replacement_cost>
+                <net_present_operating_cost units="$">-12279636</net_present_operating_cost>
+                <net_present_fuel_cost units="$">1989672</net_present_fuel_cost>
+                <net_present_salvage_cost units="$">-55600</net_present_salvage_cost>
+                <net_present_total_cost units="$">-9009900</net_present_total_cost>
+                <annualized_capital_cost units="$">29802</annualized_capital_cost>
+                <annualized_replacement_cost units="$">34660</annualized_replacement_cost>
+                <annualized_operating_cost units="$">-592645</annualized_operating_cost>
+                <annualized_fuel_cost units="$">96026</annualized_fuel_cost>
+                <annualized_salvage_cost units="$">-2683.4</annualized_salvage_cost>
+                <annualized_total_cost units="$">-434840</annualized_total_cost>
+            </component>
+        </component_costs>
+        <cost_breakdown>
+            <pv number="1">
+                <abbreviation>PV</abbreviation>
+                <description>PV</description>
+                <capital_cost units="$">10000</capital_cost>
+                <annualized_capital_cost units="$/yr">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">107.49</annualized_replacement_cost>
+                <om_cost units="$/yr">10</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">600.11</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>2.056</float>
+                    <float>2.309</float>
+                    <float>2.460</float>
+                    <float>2.444</float>
+                    <float>2.334</float>
+                    <float>2.066</float>
+                    <float>1.899</float>
+                    <float>1.873</float>
+                    <float>1.697</float>
+                    <float>2.014</float>
+                    <float>2.065</float>
+                    <float>1.985</float>
+                </monthly_average_electric_production>
+            </pv>
+            <wind_turbine number="1">
+                <abbreviation>G10</abbreviation>
+                <description>Generic 10kW</description>
+                <capital_cost units="$">25000</capital_cost>
+                <annualized_capital_cost units="$/yr">1206.6</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">1042</annualized_replacement_cost>
+                <om_cost units="$/yr">1000</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">3248.5</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.658</float>
+                    <float>1.189</float>
+                    <float>1.881</float>
+                    <float>1.698</float>
+                    <float>1.023</float>
+                    <float>0.671</float>
+                    <float>0.297</float>
+                    <float>0.117</float>
+                    <float>0.066</float>
+                    <float>0.062</float>
+                    <float>0.116</float>
+                    <float>0.267</float>
+                </monthly_average_electric_production>
+            </wind_turbine>
+            <wind_turbine number="2">
+                <abbreviation>V82</abbreviation>
+                <description>Vestas V82</description>
+                <capital_cost units="$">90000</capital_cost>
+                <annualized_capital_cost units="$/yr">4343.6</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">15873</annualized_replacement_cost>
+                <om_cost units="$/yr">3000</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">23216</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>1022.806</float>
+                    <float>1601.708</float>
+                    <float>2142.028</float>
+                    <float>2024.875</float>
+                    <float>1457.753</float>
+                    <float>1072.799</float>
+                    <float>520.788</float>
+                    <float>202.300</float>
+                    <float>105.468</float>
+                    <float>99.808</float>
+                    <float>203.106</float>
+                    <float>479.266</float>
+                </monthly_average_electric_production>
+            </wind_turbine>
+            <hydro>
+                <abbreviation>Hydro</abbreviation>
+                <description>Hydro</description>
+                <capital_cost units="$">10000</capital_cost>
+                <annualized_capital_cost units="$/yr">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">603.46</annualized_replacement_cost>
+                <om_cost units="$/yr">100</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">1186.1</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </hydro>
+            <generator number="1">
+                <abbreviation>DSLG1</abbreviation>
+                <description>Generator 1</description>
+                <capital_cost units="$">15000</capital_cost>
+                <annualized_capital_cost units="$/yr">723.94</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">2564</annualized_replacement_cost>
+                <om_cost units="$/yr">5835</om_cost>
+                <fuel_cost units="$/yr">7496.5</fuel_cost>
+                <annualized_cost units="$/yr">16619</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>5.395</float>
+                    <float>7.963</float>
+                    <float>5.327</float>
+                    <float>12.094</float>
+                    <float>11.411</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </generator>
+            <generator number="2">
+                <abbreviation>DSLG2</abbreviation>
+                <description>Generator 2</description>
+                <capital_cost units="$">5000</capital_cost>
+                <annualized_capital_cost units="$/yr">241.31</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">-39.453</annualized_replacement_cost>
+                <om_cost units="$/yr">0</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">201.86</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </generator>
+            <generator number="3">
+                <abbreviation>BMSG3</abbreviation>
+                <description>Generator 3</description>
+                <capital_cost units="$">500</capital_cost>
+                <annualized_capital_cost units="$/yr">24.131</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">53.398</annualized_replacement_cost>
+                <om_cost units="$/yr">262.7</om_cost>
+                <fuel_cost units="$/yr">1111.6</fuel_cost>
+                <annualized_cost units="$/yr">1451.9</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>8.556</float>
+                    <float>6.339</float>
+                    <float>2.837</float>
+                    <float>2.720</float>
+                    <float>6.614</float>
+                    <float>1.167</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </generator>
+            <generator number="4">
+                <abbreviation>GASG4</abbreviation>
+                <description>Generator 4</description>
+                <capital_cost units="$">5000</capital_cost>
+                <annualized_capital_cost units="$/yr">241.31</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">-37.222</annualized_replacement_cost>
+                <om_cost units="$/yr">66</om_cost>
+                <fuel_cost units="$/yr">87.12</fuel_cost>
+                <annualized_cost units="$/yr">357.21</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.712</float>
+                    <float>0.181</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </generator>
+            <generator number="5">
+                <abbreviation>PROG5</abbreviation>
+                <description>Generator 5</description>
+                <capital_cost units="$">6000</capital_cost>
+                <annualized_capital_cost units="$/yr">289.57</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">-47.344</annualized_replacement_cost>
+                <om_cost units="$/yr">0</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">242.23</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                </monthly_average_electric_production>
+            </generator>
+            <grid>
+                <capital_cost units="$">0</capital_cost>
+                <annualized_capital_cost units="$/yr">0</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">0</annualized_replacement_cost>
+                <om_cost units="$/yr">-608038</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">-608038</annualized_cost>
+                <monthly_average_electric_production>
+                    <float>0.207</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.000</float>
+                    <float>0.085</float>
+                    <float>4.626</float>
+                    <float>21.695</float>
+                    <float>33.631</float>
+                    <float>34.532</float>
+                    <float>23.278</float>
+                    <float>5.045</float>
+                </monthly_average_electric_production>
+            </grid>
+            <boiler>
+                <capital_cost units="$">0</capital_cost>
+                <annualized_capital_cost units="$/yr">0</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">0</annualized_replacement_cost>
+                <om_cost units="$/yr">0</om_cost>
+                <fuel_cost units="$/yr">87331</fuel_cost>
+                <annualized_cost units="$/yr">87331</annualized_cost>
+                <monthly_average_thermal_production>
+                    <float>3.865</float>
+                    <float>2.594</float>
+                    <float>1.901</float>
+                    <float>1.411</float>
+                    <float>2.949</float>
+                    <float>29.033</float>
+                    <float>27.459</float>
+                    <float>23.079</float>
+                    <float>20.386</float>
+                    <float>20.769</float>
+                    <float>22.837</float>
+                    <float>27.111</float>
+                </monthly_average_thermal_production>
+            </boiler>
+            <battery>
+                <abbreviation>Cellcube FB 200-1600</abbreviation>
+                <description>FB200-1600</description>
+                <capital_cost units="$">390000</capital_cost>
+                <annualized_capital_cost units="$/yr">18822</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">10094</annualized_replacement_cost>
+                <om_cost units="$/yr">4500</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">33416</annualized_cost>
+            </battery>
+            <converter>
+                <capital_cost units="$">10000</capital_cost>
+                <annualized_capital_cost units="$/yr">482.62</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">96.741</annualized_replacement_cost>
+                <om_cost units="$/yr">1000</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">1579.4</annualized_cost>
+            </converter>
+            <other>
+                <capital_cost units="$">11000</capital_cost>
+                <annualized_capital_cost units="$/yr">530.89</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">0</annualized_replacement_cost>
+                <om_cost units="$/yr">-580.32</om_cost>
+                <fuel_cost units="$/yr">0</fuel_cost>
+                <annualized_cost units="$/yr">-49.433</annualized_cost>
+            </other>
+            <total>
+                <capital_cost units="$">617500</capital_cost>
+                <annualized_capital_cost units="$/yr">29802</annualized_capital_cost>
+                <annualized_replacement_cost units="$/yr">31977</annualized_replacement_cost>
+                <om_cost units="$/yr">-592645</om_cost>
+                <fuel_cost units="$/yr">96026</fuel_cost>
+                <annualized_cost units="$/yr">-434840</annualized_cost>
+            </total>
+        </cost_breakdown>
+        <annual_electric_production>
+            <pv number="1" units="kWh/yr">18386</pv>
+            <wind_turbine number="1" units="kWh/yr">5838.8</wind_turbine>
+            <wind_turbine number="2" units="kWh/yr">7936854</wind_turbine>
+            <hydro units="kWh/yr">0</hydro>
+            <generator number="1" units="kWh/yr">30527</generator>
+            <generator number="2" units="kWh/yr">0</generator>
+            <generator number="3" units="kWh/yr">20457</generator>
+            <generator number="4" units="kWh/yr">660</generator>
+            <generator number="5" units="kWh/yr">0</generator>
+            <grid_purchases units="kWh/yr">90218</grid_purchases>
+            <total units="kWh/yr">8102940</total>
+        </annual_electric_production>
+        <annual_electric_consumption>
+            <ac_primary_load_served units="kWh/yr">47815</ac_primary_load_served>
+            <dc_primary_load_served units="kWh/yr">20075</dc_primary_load_served>
+            <deferrable_load_served units="kWh/yr">2944.8</deferrable_load_served>
+            <grid_sales units="kWh/yr">4961026</grid_sales>
+            <total units="kWh/yr">5557461</total>
+        </annual_electric_consumption>
+        <annual_statistics>
+            <renewable_fraction>0.93632</renewable_fraction>
+            <excess_electricity units="kWh/yr">2311961</excess_electricity>
+            <excess_electricity_fraction>0.28532</excess_electricity_fraction>
+            <unmet_load units="kWh/yr">0.0017252</unmet_load>
+            <unmet_load_fraction>0.000000024356</unmet_load_fraction>
+            <capacity_shortage units="kWh/yr">0</capacity_shortage>
+            <capacity_shortage_fraction>0</capacity_shortage_fraction>
+            <maximum_renewable_penetration units="%">1580.1</maximum_renewable_penetration>
+            <primary_energy_savings units="%">98.979</primary_energy_savings>
+            <CHP_fuel_input units="MWh/yr">330.87</CHP_fuel_input>
+            <CHP_electrical_production units="MWh/yr">8012.7</CHP_electrical_production>
+            <CHP_thermal_production units="MWh/yr">107.92</CHP_thermal_production>
+            <CHP_electrical_efficiency units="%">2421.7</CHP_electrical_efficiency>
+            <CHP_thermal_efficiency units="%">32.616</CHP_thermal_efficiency>
+        </annual_statistics>
+        <annual_thermal_production>
+            <generator number="1" units="kWh/yr">57306</generator>
+            <generator number="3" units="kWh/yr">50611</generator>
+            <boiler units="kWh/yr">134490</boiler>
+            <excess_electricity units="kWh/yr">2311961</excess_electricity>
+            <total units="kWh/yr">2554368</total>
+        </annual_thermal_production>
+        <annual_thermal_consumption>
+            <thermal_load_served>262070</thermal_load_served>
+            <excess_thermal_energy>2292298</excess_thermal_energy>
+        </annual_thermal_consumption>
+        <monthly_thermal_production>
+            <boiler_monthly_average_thermal_production>
+                <float>3.865</float>
+                <float>2.594</float>
+                <float>1.901</float>
+                <float>1.411</float>
+                <float>2.949</float>
+                <float>29.033</float>
+                <float>27.459</float>
+                <float>23.079</float>
+                <float>20.386</float>
+                <float>20.769</float>
+                <float>22.837</float>
+                <float>27.111</float>
+            </boiler_monthly_average_thermal_production>
+            <monthly_excess_electricity>
+                <float>315.211</float>
+                <float>510.529</float>
+                <float>793.136</float>
+                <float>770.011</float>
+                <float>535.284</float>
+                <float>201.555</float>
+                <float>38.303</float>
+                <float>1.575</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>1.154</float>
+                <float>21.497</float>
+            </monthly_excess_electricity>
+            <generator_monthly_average_thermal_production number="0">
+                <float>10.231</float>
+                <float>15.080</float>
+                <float>10.049</float>
+                <float>22.970</float>
+                <float>20.896</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+            </generator_monthly_average_thermal_production>
+            <generator_monthly_average_thermal_production number="1">
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+            </generator_monthly_average_thermal_production>
+            <generator_monthly_average_thermal_production number="2">
+                <float>19.646</float>
+                <float>15.254</float>
+                <float>8.026</float>
+                <float>8.223</float>
+                <float>16.066</float>
+                <float>2.637</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+            </generator_monthly_average_thermal_production>
+            <generator_monthly_average_thermal_production number="3">
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+            </generator_monthly_average_thermal_production>
+            <generator_monthly_average_thermal_production number="4">
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+                <float>0.000</float>
+            </generator_monthly_average_thermal_production>
+        </monthly_thermal_production>
+        <pv number="1">
+            <mean_output units="kW">2.0989</mean_output>
+            <daily_mean_output units="kWh/d">50.372</daily_mean_output>
+            <capacity_factor units="%">20.989</capacity_factor>
+            <total_production units="kWh/yr">18386</total_production>
+            <min_output units="kW">0</min_output>
+            <max_output units="kW">7.9536</max_output>
+            <solar_penetration units="%">27.082</solar_penetration>
+            <hours_of_operation units="hrs/yr">4332</hours_of_operation>
+            <levelized_cost units="$/kWh">0.03264</levelized_cost>
+        </pv>
+        <wind_turbine number="1">
+            <total_capacity units="kW">10</total_capacity>
+            <mean_output units="kW">0.66653</mean_output>
+            <min_output units="kW">0</min_output>
+            <max_output units="kW">6.039</max_output>
+            <total_production units="kWh/yr">5838.8</total_production>
+            <wind_penetration units="%">8.6004</wind_penetration>
+            <capacity_factor units="%">6.6653</capacity_factor>
+            <hours_of_operation units="hrs/yr">7464</hours_of_operation>
+            <levelized_cost units="$/kWh">0.55637</levelized_cost>
+        </wind_turbine>
+        <wind_turbine number="2">
+            <total_capacity units="kW">4950</total_capacity>
+            <mean_output units="kW">906.03</mean_output>
+            <min_output units="kW">0</min_output>
+            <max_output units="kW">4396</max_output>
+            <total_production units="kWh/yr">7936854</total_production>
+            <wind_penetration units="%">11691</wind_penetration>
+            <capacity_factor units="%">18.304</capacity_factor>
+            <hours_of_operation units="hrs/yr">8037</hours_of_operation>
+            <levelized_cost units="$/kWh">0.0029251</levelized_cost>
+        </wind_turbine>
+        <hydro>
+            <total_production units="kWh/yr">0</total_production>
+            <levelized_cost units="$/kWh">0</levelized_cost>
+            <mean_output units="kW">0</mean_output>
+            <min_output units="kW">0</min_output>
+            <max_output units="kW">0</max_output>
+            <hydro_penetration units="%">0</hydro_penetration>
+            <capacity_factor units="%">0</capacity_factor>
+            <hours_of_operation units="hrs/yr">0</hours_of_operation>
+        </hydro>
+        <generator number="1">
+            <hours_of_operation units="hrs/yr">1945</hours_of_operation>
+            <capacity_factor units="%">11.616</capacity_factor>
+            <starts units="starts/yr">430</starts>
+            <lifetime units="yr">5.1414</lifetime>
+            <fixed_generation_cost units="$/hr">6.0082</fixed_generation_cost>
+            <marginal_generation_cost units="$/kWh">0.15082</marginal_generation_cost>
+            <electrical_production units="kWh/yr">30527</electrical_production>
+            <mean_electrical_output units="kW">15.695</mean_electrical_output>
+            <min_electrical_output units="kW">15</min_electrical_output>
+            <max_electrical_output units="kW">30</max_electrical_output>
+            <thermal_production units="kWh/yr">57306</thermal_production>
+            <mean_thermal_output units="kW">29.463</mean_thermal_output>
+            <min_thermal_output units="kW">28.802</min_thermal_output>
+            <max_thermal_output units="kW">43.083</max_thermal_output>
+            <fuel_consumption units="L/yr">14993</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0.49115</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">145140</fuel_energy_input>
+            <mean_electrical_efficiency units="%">21.032</mean_electrical_efficiency>
+            <mean_total_efficiency units="%">60.516</mean_total_efficiency>
+        </generator>
+        <generator number="2">
+            <hours_of_operation units="hrs/yr">0</hours_of_operation>
+            <capacity_factor units="%">0</capacity_factor>
+            <starts units="starts/yr">0</starts>
+            <lifetime units="yr">1000</lifetime>
+            <fixed_generation_cost units="$/hr">1.6555</fixed_generation_cost>
+            <marginal_generation_cost units="$/kWh">0.10068</marginal_generation_cost>
+            <electrical_production units="kWh/yr">0</electrical_production>
+            <mean_electrical_output units="kW">0</mean_electrical_output>
+            <min_electrical_output units="kW">0</min_electrical_output>
+            <max_electrical_output units="kW">0</max_electrical_output>
+            <fuel_consumption units="L/yr">0</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">0</fuel_energy_input>
+            <mean_electrical_efficiency units="%">0</mean_electrical_efficiency>
+        </generator>
+        <generator number="3">
+            <hours_of_operation units="hrs/yr">2627</hours_of_operation>
+            <capacity_factor units="%">23.352</capacity_factor>
+            <starts units="starts/yr">307</starts>
+            <lifetime units="yr">7.6132</lifetime>
+            <fixed_generation_cost units="$/hr">0.27382</fixed_generation_cost>
+            <marginal_generation_cost units="$/kWh">0.031004</marginal_generation_cost>
+            <electrical_production units="kWh/yr">20457</electrical_production>
+            <mean_electrical_output units="kW">7.787</mean_electrical_output>
+            <min_electrical_output units="kW">3.5</min_electrical_output>
+            <max_electrical_output units="kW">10</max_electrical_output>
+            <thermal_production units="kWh/yr">50611</thermal_production>
+            <mean_thermal_output units="kW">19.266</mean_thermal_output>
+            <min_thermal_output units="kW">13.194</min_thermal_output>
+            <max_thermal_output units="kW">22.4</max_thermal_output>
+            <fuel_consumption units="L/yr">2779.1</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0.13585</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">183588</fuel_energy_input>
+            <mean_electrical_efficiency units="%">11.143</mean_electrical_efficiency>
+            <mean_total_efficiency units="%">38.71</mean_total_efficiency>
+        </generator>
+        <generator number="4">
+            <hours_of_operation units="hrs/yr">66</hours_of_operation>
+            <capacity_factor units="%">0.75342</capacity_factor>
+            <starts units="starts/yr">17</starts>
+            <lifetime units="yr">454.55</lifetime>
+            <fixed_generation_cost units="$/hr">1.4889</fixed_generation_cost>
+            <marginal_generation_cost units="$/kWh">0.10069</marginal_generation_cost>
+            <electrical_production units="kWh/yr">660</electrical_production>
+            <mean_electrical_output units="kW">10</mean_electrical_output>
+            <min_electrical_output units="kW">10</min_electrical_output>
+            <max_electrical_output units="kW">10</max_electrical_output>
+            <fuel_consumption units="L/yr">217.8</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0.33</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">2143.2</fuel_energy_input>
+            <mean_electrical_efficiency units="%">30.796</mean_electrical_efficiency>
+        </generator>
+        <generator number="5">
+            <hours_of_operation units="hrs/yr">0</hours_of_operation>
+            <capacity_factor units="%">0</capacity_factor>
+            <starts units="starts/yr">0</starts>
+            <lifetime units="yr">1000</lifetime>
+            <fixed_generation_cost units="$/hr">4.3759</fixed_generation_cost>
+            <marginal_generation_cost units="$/kWh">0.22156</marginal_generation_cost>
+            <electrical_production units="kWh/yr">0</electrical_production>
+            <mean_electrical_output units="kW">0</mean_electrical_output>
+            <min_electrical_output units="kW">0</min_electrical_output>
+            <max_electrical_output units="kW">0</max_electrical_output>
+            <fuel_consumption units="L/yr">0</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">0</fuel_energy_input>
+            <mean_electrical_efficiency units="%">0</mean_electrical_efficiency>
+        </generator>
+        <boiler>
+            <hours_of_production units="h/yr">6153</hours_of_production>
+            <total_production units="kWh/yr">134490</total_production>
+            <mean_output units="kW">15.353</mean_output>
+            <min_output units="kW">0.15931</min_output>
+            <max_output units="kW">44.412</max_output>
+            <fuel_consumption units="L/yr">43666</fuel_consumption>
+            <specific_fuel_consumption units="L/kWh">0.32468</specific_fuel_consumption>
+            <fuel_energy_input units="kWh/yr">192128</fuel_energy_input>
+            <mean_efficiency units="%">70</mean_efficiency>
+        </boiler>
+        <converter>
+            <inverter_mean_output units=" kWh/d">17.675</inverter_mean_output>
+            <inverter_min_output units="kW">0</inverter_min_output>
+            <inverter_max_output units="kW">999.6</inverter_max_output>
+            <inverter_capacity_factor units="%">0.073645</inverter_capacity_factor>
+            <inverter_hours_of_operation units="hrs/yr">2184</inverter_hours_of_operation>
+            <inverter_energy_in units="kWh/yr">162981</inverter_energy_in>
+            <inverter_energy_out units="kWh/yr">154832</inverter_energy_out>
+            <inverter_losses units="kWh/yr">8149.2</inverter_losses>
+            <rectifier_mean_output units=" kWh/d">121.31</rectifier_mean_output>
+            <rectifier_min_output units="kW">0</rectifier_min_output>
+            <rectifier_max_output units="kW">1000</rectifier_max_output>
+            <rectifier_capacity_factor units="%">0.50545</rectifier_capacity_factor>
+            <rectifier_hours_of_operation units="hrs/yr">4606</rectifier_hours_of_operation>
+            <rectifier_energy_in units="kWh/yr">1084364</rectifier_energy_in>
+            <rectifier_energy_out units="kWh/yr">1062666</rectifier_energy_out>
+            <rectifier_losses units="kWh/yr">21698</rectifier_losses>
+        </converter>
+        <battery>
+            <string_size>1</string_size>
+            <strings_in_parallel>100</strings_in_parallel>
+            <batteries>100</batteries>
+            <bus_voltage>700</bus_voltage>
+            <nominal_capacity units="kWh">160000</nominal_capacity>
+            <usable_nominal_capacity units="kWh">160000</usable_nominal_capacity>
+            <autonomy units="hr">19786</autonomy>
+            <battery_wear_cost units="$/kWh">0</battery_wear_cost>
+            <average_energy_cost units="$/kWh">0</average_energy_cost>
+            <energy_in units="kWh/yr">1060485</energy_in>
+            <energy_out units="kWh/yr">856791</energy_out>
+            <storage_depletion units="kWh/yr">160000</storage_depletion>
+            <losses units="kWh/yr">43695</losses>
+            <annual_throughput units="kWh/yr">1062713</annual_throughput>
+            <expected_life units="yr">20</expected_life>
+        </battery>
+        <grid>
+            <rate label="Rate 1">
+                <jan>
+                    <energy_purchased units="kWh">154.05</energy_purchased>
+                    <energy_sold units="kWh">634028</energy_sold>
+                    <net_energy_purchased units="kWh">-633874</net_energy_purchased>
+                    <peak_demand units="kW">20.55</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">164.4</demand_charge>
+                </jan>
+                <feb>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">644155</energy_sold>
+                    <net_energy_purchased units="kWh">-644155</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </feb>
+                <mar>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">742795</energy_sold>
+                    <net_energy_purchased units="kWh">-742795</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </mar>
+                <apr>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">552000</energy_sold>
+                    <net_energy_purchased units="kWh">-552000</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </apr>
+                <may>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">539752</energy_sold>
+                    <net_energy_purchased units="kWh">-539752</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </may>
+                <jun>
+                    <energy_purchased units="kWh">61.149</energy_purchased>
+                    <energy_sold units="kWh">345783</energy_sold>
+                    <net_energy_purchased units="kWh">-345722</net_energy_purchased>
+                    <peak_demand units="kW">26.323</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">210.59</demand_charge>
+                </jun>
+                <jul>
+                    <energy_purchased units="kWh">3116.7</energy_purchased>
+                    <energy_sold units="kWh">169542</energy_sold>
+                    <net_energy_purchased units="kWh">-166426</net_energy_purchased>
+                    <peak_demand units="kW">69.332</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">554.65</demand_charge>
+                </jul>
+                <aug>
+                    <energy_purchased units="kWh">13049</energy_purchased>
+                    <energy_sold units="kWh">58320</energy_sold>
+                    <net_energy_purchased units="kWh">-45272</net_energy_purchased>
+                    <peak_demand units="kW">71.892</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">575.13</demand_charge>
+                </aug>
+                <sep>
+                    <energy_purchased units="kWh">18989</energy_purchased>
+                    <energy_sold units="kWh">22969</energy_sold>
+                    <net_energy_purchased units="kWh">-3979.6</net_energy_purchased>
+                    <peak_demand units="kW">72.623</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">580.98</demand_charge>
+                </sep>
+                <oct>
+                    <energy_purchased units="kWh">19771</energy_purchased>
+                    <energy_sold units="kWh">19993</energy_sold>
+                    <net_energy_purchased units="kWh">-221.98</net_energy_purchased>
+                    <peak_demand units="kW">73.4</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">587.2</demand_charge>
+                </oct>
+                <nov>
+                    <energy_purchased units="kWh">14698</energy_purchased>
+                    <energy_sold units="kWh">66669</energy_sold>
+                    <net_energy_purchased units="kWh">-51972</net_energy_purchased>
+                    <peak_demand units="kW">72.015</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">576.12</demand_charge>
+                </nov>
+                <dec>
+                    <energy_purchased units="kWh">3753.2</energy_purchased>
+                    <energy_sold units="kWh">292468</energy_sold>
+                    <net_energy_purchased units="kWh">-288715</net_energy_purchased>
+                    <peak_demand units="kW">68.331</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">546.65</demand_charge>
+                </dec>
+                <annual>
+                    <energy_purchased units="kWh">73591</energy_purchased>
+                    <energy_sold units="kWh">4088475</energy_sold>
+                    <net_energy_purchased units="kWh">-4014884</net_energy_purchased>
+                    <peak_demand units="kW">73.4</peak_demand>
+                    <energy_charge units="$">-401488</energy_charge>
+                    <demand_charge units="$">3795.7</demand_charge>
+                </annual>
+            </rate>
+            <rate label="Rate 2">
+                <jan>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">0</energy_sold>
+                    <net_energy_purchased units="kWh">0</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </jan>
+                <feb>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">0</energy_sold>
+                    <net_energy_purchased units="kWh">0</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </feb>
+                <mar>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">0</energy_sold>
+                    <net_energy_purchased units="kWh">0</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </mar>
+                <apr>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">168000</energy_sold>
+                    <net_energy_purchased units="kWh">-168000</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </apr>
+                <may>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">182482</energy_sold>
+                    <net_energy_purchased units="kWh">-182482</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </may>
+                <jun>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">220306</energy_sold>
+                    <net_energy_purchased units="kWh">-220306</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </jun>
+                <jul>
+                    <energy_purchased units="kWh">325.26</energy_purchased>
+                    <energy_sold units="kWh">140597</energy_sold>
+                    <net_energy_purchased units="kWh">-140272</net_energy_purchased>
+                    <peak_demand units="kW">57.194</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">571.94</demand_charge>
+                </jul>
+                <aug>
+                    <energy_purchased units="kWh">3092.4</energy_purchased>
+                    <energy_sold units="kWh">56144</energy_sold>
+                    <net_energy_purchased units="kWh">-53051</net_energy_purchased>
+                    <peak_demand units="kW">81.799</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">817.99</demand_charge>
+                </aug>
+                <sep>
+                    <energy_purchased units="kWh">5225.4</energy_purchased>
+                    <energy_sold units="kWh">28651</energy_sold>
+                    <net_energy_purchased units="kWh">-23426</net_energy_purchased>
+                    <peak_demand units="kW">75.379</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">753.79</demand_charge>
+                </sep>
+                <oct>
+                    <energy_purchased units="kWh">5920.9</energy_purchased>
+                    <energy_sold units="kWh">29888</energy_sold>
+                    <net_energy_purchased units="kWh">-23967</net_energy_purchased>
+                    <peak_demand units="kW">74.925</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">749.25</demand_charge>
+                </oct>
+                <nov>
+                    <energy_purchased units="kWh">2062.4</energy_purchased>
+                    <energy_sold units="kWh">46482</energy_sold>
+                    <net_energy_purchased units="kWh">-44419</net_energy_purchased>
+                    <peak_demand units="kW">74.234</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">742.34</demand_charge>
+                </nov>
+                <dec>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">0</energy_sold>
+                    <net_energy_purchased units="kWh">0</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </dec>
+                <annual>
+                    <energy_purchased units="kWh">16626</energy_purchased>
+                    <energy_sold units="kWh">872551</energy_sold>
+                    <net_energy_purchased units="kWh">-855924</net_energy_purchased>
+                    <peak_demand units="kW">81.799</peak_demand>
+                    <energy_charge units="$">-213981</energy_charge>
+                    <demand_charge units="$">3635.3</demand_charge>
+                </annual>
+            </rate>
+            <all_rates>
+                <jan>
+                    <energy_purchased units="kWh">154.05</energy_purchased>
+                    <energy_sold units="kWh">634028</energy_sold>
+                    <net_energy_purchased units="kWh">-633874</net_energy_purchased>
+                    <peak_demand units="kW">20.55</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">164.4</demand_charge>
+                </jan>
+                <feb>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">644155</energy_sold>
+                    <net_energy_purchased units="kWh">-644155</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </feb>
+                <mar>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">742795</energy_sold>
+                    <net_energy_purchased units="kWh">-742795</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </mar>
+                <apr>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">720000</energy_sold>
+                    <net_energy_purchased units="kWh">-720000</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </apr>
+                <may>
+                    <energy_purchased units="kWh">0</energy_purchased>
+                    <energy_sold units="kWh">722235</energy_sold>
+                    <net_energy_purchased units="kWh">-722235</net_energy_purchased>
+                    <peak_demand units="kW">0</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">0</demand_charge>
+                </may>
+                <jun>
+                    <energy_purchased units="kWh">61.149</energy_purchased>
+                    <energy_sold units="kWh">566089</energy_sold>
+                    <net_energy_purchased units="kWh">-566028</net_energy_purchased>
+                    <peak_demand units="kW">26.323</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">210.59</demand_charge>
+                </jun>
+                <jul>
+                    <energy_purchased units="kWh">3441.9</energy_purchased>
+                    <energy_sold units="kWh">310140</energy_sold>
+                    <net_energy_purchased units="kWh">-306698</net_energy_purchased>
+                    <peak_demand units="kW">69.332</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">1126.6</demand_charge>
+                </jul>
+                <aug>
+                    <energy_purchased units="kWh">16141</energy_purchased>
+                    <energy_sold units="kWh">114464</energy_sold>
+                    <net_energy_purchased units="kWh">-98323</net_energy_purchased>
+                    <peak_demand units="kW">81.799</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">1393.1</demand_charge>
+                </aug>
+                <sep>
+                    <energy_purchased units="kWh">24215</energy_purchased>
+                    <energy_sold units="kWh">51620</energy_sold>
+                    <net_energy_purchased units="kWh">-27405</net_energy_purchased>
+                    <peak_demand units="kW">75.379</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">1334.8</demand_charge>
+                </sep>
+                <oct>
+                    <energy_purchased units="kWh">25692</energy_purchased>
+                    <energy_sold units="kWh">49881</energy_sold>
+                    <net_energy_purchased units="kWh">-24189</net_energy_purchased>
+                    <peak_demand units="kW">74.925</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">1336.5</demand_charge>
+                </oct>
+                <nov>
+                    <energy_purchased units="kWh">16760</energy_purchased>
+                    <energy_sold units="kWh">113151</energy_sold>
+                    <net_energy_purchased units="kWh">-96391</net_energy_purchased>
+                    <peak_demand units="kW">74.234</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">1318.5</demand_charge>
+                </nov>
+                <dec>
+                    <energy_purchased units="kWh">3753.2</energy_purchased>
+                    <energy_sold units="kWh">292468</energy_sold>
+                    <net_energy_purchased units="kWh">-288715</net_energy_purchased>
+                    <peak_demand units="kW">68.331</peak_demand>
+                    <energy_charge units="$">0</energy_charge>
+                    <demand_charge units="$">546.65</demand_charge>
+                </dec>
+                <annual>
+                    <energy_purchased units="kWh">90218</energy_purchased>
+                    <energy_sold units="kWh">4961026</energy_sold>
+                    <net_energy_purchased units="kWh">-4870808</net_energy_purchased>
+                    <peak_demand units="kW">81.799</peak_demand>
+                    <energy_charge units="$">-615469</energy_charge>
+                    <demand_charge units="$">7431</demand_charge>
+                </annual>
+            </all_rates>
+        </grid>
+        <emissions>
+            <co2_emissions units="kg/yr">-1006896</co2_emissions>
+            <co_emissions units="kg/yr">-24180</co_emissions>
+            <uhc_emissions units="kg/yr">-48592</uhc_emissions>
+            <pm_emissions units="kg/yr">-48570</pm_emissions>
+            <so2_emissions units="kg/yr">-38647</so2_emissions>
+            <nox_emissions units="kg/yr">-472.73</nox_emissions>
+        </emissions>
+    </simulation_results>
+</homerml>
