@@ -44,22 +44,43 @@ question6 <- sites %>%
 question7 <- pollution %>%
   filter(`Parameter Name` == "EC PM2.5 LC TOR" ) %>%
   select(`State Code`, `County Code`, `Site Number`, `Arithmetic Mean`)
-question7b <- ddply(question7, .(`State Code`, `County Code`, `Site Num`), summarize, TotalMean=mean(`Arithmetic Mean`, na.rm=TRUE))
-
+question7b <- ddply(question7, .(`State Code`, `County Code`, `Site Number`), summarize, TotalMean=mean(`Arithmetic Mean`, na.rm=TRUE))
+question7b$`State Code` = as.numeric(as.character(question7b$`State Code`))
+question7b$`County Code` = as.numeric(as.character(question7b$`County Code`))
+question7b$`Site Num` = as.numeric(as.character(question7b$`Site Num`))
 question7d <- sites %>%
   filter(`Land Use` == "RESIDENTIAL") %>%
   filter(`Location Setting` == "SUBURBAN") %>%
   filter(`Longitude` >= -100)
+questionTemp <- question7d %>%
+  filter(`State Code` %in% question7b$`State Code`) %>%
+  filter(`County Code` %in% question7b$`County Code`) %>%
+  filter(`Site Number` %in% question7b$`Site Num`)
+question7e <- question7b %>%
+  filter(`State Code` %in% questionTemp$`State Code`) %>%
+  filter(`County Code` %in% questionTemp$`County Code`) %>%
+  filter(`Site Num` %in% questionTemp$`Site Number`)
+question7f <- ddply(question7e, .(), summarize, TotalMean=mean(`TotalMean`, na.rm=TRUE))
 
-question7e <- intersect(question7d, question7b)
-for(i in 1:length(question7b)) {
-  questionTemp <- question7d %>%
-    filter(`State Code` == as.character(question7b[i]$`State Code`)) %>%
-    filter(`County Code` == as.character(question7b[i]$`County Code`)) %>%
-    filter(`Site Number` == as.character(question7b[i]$`Site Number`))
-  
-  print(questionTemp)
-    # next(x[i] < 5) # Just for conceptualizing my question.
-  #print(question7b[i])
-}
+ 
+ #Amongst monitoring sites that are labeled as COMMERCIAL for "Land Use", which month
+question8 <- sites %>%
+  filter(`Land Use` == "COMMERCIAL")
+questionTemp <- pollution %>%
+  filter(`State Code` %in% question8$`State Code`) %>%
+  filter(`County Code` %in% question8$`County Code`) %>%
+  filter(`Site Num` %in% question8$`Site Number`) %>%
+  filter(`Parameter Name` == "Sulfate PM2.5 LC") %>%
+  arrange(`Arithmetic Mean`)
+head(questionTemp)
 
+questionblah <- sites %>%
+  filter(`Land Use` == "RESIDENTIAL") %>%
+  filter(`Location Setting` == "SUBURBAN") %>%
+  filter(`Longitude` >= -100)
+questionblah2 <- sites %>%
+  filter(`Land Use` == "RESIDENTIAL")
+questionblah2 <- questionblah2 %>%
+  filter(`Location Setting` == "SUBURBAN")
+questionblah2 <- questionblah2 %>%
+  filter(`Longitude` >= -100)
