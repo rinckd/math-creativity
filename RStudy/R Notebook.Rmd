@@ -1,0 +1,36 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+To run-> *Cmd+Shift+Enter*. 
+Insert chunk ->  *Cmd+Option+I*
+
+###RNorm 
+Standard normal random variables with a mean of 0 and a standard deviation of 1.
+```{r}
+set.seed(1303)
+y <- rnorm(1000)
+mean(y)
+```
+Or set the mean and standard deviation.
+Corr finds correlation between two vectors
+```{r}
+set.seed(3)
+x <- rnorm(1000, mean=50, sd = .1)
+mean(x)
+var(x)
+sd(x)
+cor(x,y)
+```
+
+```{r}
+library(ISLR)
+
+fix(Carseats)
+banes(Carseats)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
