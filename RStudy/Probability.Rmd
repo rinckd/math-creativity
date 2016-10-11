@@ -1,0 +1,38 @@
+---
+title: "Basic Probability"
+output: html_notebook
+---
+
+*Run* -> *Ctrl+Shift+Enter*.
+*Insert Chunk* -> *Ctrl+Alt+I*.
+
+Sample -- 1-6 is in the hat, 2 is the number of draws from the hat
+```{r}
+sample(1:6, 2)
+```
+To model a die or coin, you want to set replace=T so that rolls are independent of one another
+```{r}
+sample(1:6, replace=T)
+```
+
+```{r}
+# probability of get 10 heads out of 10 tosses of a fair coin? 
+dbinom(10, 10, 0.5)
+# Biased coin produces head 70% of the time. One tosses the coin twice.
+# What is the probability that both tosses have the same outcome?
+dbinom(2,2,0.7) + dbinom(2,2,0.3)
+```
+
+```{r}
+dbinom(2,2,0.3)
+
+dbinom(2,2,0.5)
+
+
+(0.5*0.09) / (0.5*0.09 + (0.5*0.25))
+
+0.3*.3
+```
+
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
