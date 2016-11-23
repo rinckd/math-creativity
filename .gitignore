@@ -57,3 +57,4 @@ coverage.xml
 docs/_build/
 
 .Rproj.user
+NewD3/node_modules/
