@@ -58,3 +58,7 @@ docs/_build/
 
 .Rproj.user
 NewD3/node_modules/
+MidiPlugin/Builds/VisualStudio2015/NewProject.vcxproj.user
+MidiPlugin/Builds/VisualStudio2015/.vs/NewProject/v14/.suo
+MidiPlugin/Builds/VisualStudio2015/NewProject.VC.db
+MidiPlugin/Builds/VisualStudio2015/NewProject.VC.VC.opendb
